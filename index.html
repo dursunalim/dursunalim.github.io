@@ -3,10 +3,47 @@
 <title>Dursun ALİM</title>
 <meta charset="utf-8"/>
 <style type="text/css">
-
+  main{
+    display:grid;
+    max-width:960px;
+    margin:0 auto;
+    grid-template-rows:repeat(4,minmax(70px,auto));
+    grid-gap:10px;
+    grid-template-areas:
+      'ust ust ust ust'
+      'anamenu anamenu anamenu anamenu'
+      'yanmenu yanmenu icerik icerik
+      '. . icerik icerik'
+      'alt alt alt alt';
+  }
+  main>*{
+    background-color:lightblue;
+    padding:10px;
+  }
+  header{
+    grid-area:ust;
+  }
+  nav{
+    grid-area:anamenu;
+  }
+  aside{
+    grid-area:yanmenu;
+  }
+  section{
+    grid-area:icerik;
+  }
+  footer{
+    grid-area:alt;
+  }
 </style>
 </head>
 <body>
-<h1>Web Tasarım Bloguma Hoşgeldiniz!</h1>
+  <main>
+    <header></header>
+    <nav></nav>
+    <aside></aside>
+    <section></section>
+    <footer></footer>
+  </main>
 </body>
 </html>
