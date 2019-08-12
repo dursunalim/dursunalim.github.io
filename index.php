@@ -12,7 +12,12 @@
    <header><h1>başlik</h1></header>
    <nav><p>Burası menu bölümü</p></nav>
    <aside><strong>burası yan icerik bölümü</strong></aside>
-   <section></section>
+   <section>
+    <?php
+    echo"dursun";
+
+    ?>
+   </section>
    <footer></footer>
   </main>
  </body>
